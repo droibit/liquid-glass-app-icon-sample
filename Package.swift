@@ -23,10 +23,10 @@ let debugOtherSwiftFlags = [
 ]
 
 let package = Package(
-  name: "SampleApp",
+  name: "AppIconSample",
   defaultLocalization: "en",
   platforms: [
-    .iOS(.v17),
+    .iOS(.v18),
   ],
   products: [
     .library(

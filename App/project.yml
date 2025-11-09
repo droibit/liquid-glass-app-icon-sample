@@ -1,4 +1,4 @@
-name: SampleApp
+name: AppIconSample
 options:
   xcodeVersion: "16.0"
   deploymentTarget:
@@ -11,11 +11,11 @@ settings:
     SWIFT_VERSION: 6.0
 
 packages:
-  SampleApp:
+  AppIconSample:
     path: ..
 
 targets:
-  SampleApp:
+  AppIconSample:
     type: application
     platform: iOS
     settings:
@@ -42,7 +42,7 @@ targets:
     sources:
       - path: ./iOS
     dependencies:
-      - package: SampleApp
+      - package: AppIconSample
         products:
           - App
     postBuildScripts:
@@ -54,10 +54,10 @@ targets:
           make lint
 
 schemes:
-  SampleApp:
+  AppIconSample:
     build:
       targets:
-        SampleApp: all
+        AppIconSample: all
     run:
       config: Debug
       environmentVariables:
